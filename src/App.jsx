@@ -1,9 +1,22 @@
+import { useEffect } from "react"
+import Login from "./Components/Auth/Login"
+import AdminDashboard from "./Components/Dashboard/AdminDashboard"
+import EmployeDashboard from "./Components/Dashboard/EmployeDashboard"
+import { getLocalStoage, setLocalStorage } from "./Utils/localStorage"
+
 
 function App() {
 
+  useEffect(() => {
+    // setLocalStorage();
+    getLocalStoage();
+  })
+
   return (
     <>
-      <h1 className='bg-red-600'>Employ management system faizan</h1>
+      {/* <Login/> */}
+      <EmployeDashboard/>
+      {/* <AdminDashboard/> */}
     </>
   )
 }
