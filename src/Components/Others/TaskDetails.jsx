@@ -1,4 +1,4 @@
-export function TaskDetails() {
+export default function TaskDetails() {
   return (
     <div className="flex flex-wrap mt-10 justify-center md:justify-between gap-4">
       <div className="rounded-xl cursor-pointer w-full md:w-[45%] py-6 px-4 md:px-9 bg-red-400 text-center">

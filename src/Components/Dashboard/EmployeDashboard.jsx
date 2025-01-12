@@ -7,7 +7,7 @@ export default function EmployeDashboard() {
     <div className="bg-[#1c1c1c] min-h-screen p-5 md:p-20">
       <div>
         <Header />
-        <TaskDetails />
+        <TaskDetails/>
         <TaskList />
       </div>
     </div>

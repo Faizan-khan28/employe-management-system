@@ -1,12 +1,14 @@
 import { useState } from "react";
 
-export default function Login() {
+export default function Login({handleLogin}) {
+
+
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
 
   let handleSubmit = (event) => {
     event.preventDefault();
-    console.log("hello Your Form Is Submitted");
+    handleLogin(email , password)
     setEmail("");
     setPassword("");
   };

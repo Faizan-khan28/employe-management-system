@@ -3,7 +3,7 @@
 export default function CreateTask() {
   return (
     <div className="bg-[#1c1c1c] mt-5 p-4 sm:p-5 rounded">
-      <form className="flex flex-col sm:flex-wrap sm:flex-row w-full items-start justify-between gap-4">
+      <form className="flex flex-col  sm:flex-row w-full items-start justify-between gap-4">
         <div className="w-full sm:w-1/2">
           <div>
             <h3 className="text-xs sm:text-sm text-gray-300 mb-1">Task Title</h3>
@@ -41,7 +41,7 @@ export default function CreateTask() {
           </div>
         </div>
 
-        <div className="w-full sm:w-1/2">
+        <div className="w-full">
           <h3 className="text-xs sm:text-sm text-gray-300 mb-1">Description</h3>
           <textarea
             className="w-full h-32 sm:h-44 text-xs sm:text-sm py-2 px-4 rounded outline-none bg-transparent border-[1px] border-gray-400"
