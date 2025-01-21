@@ -17,3 +17,7 @@ body {
 #AllTask::-webkit-scrollbar {
     display: none;
 }
+
+#emp::-webkit-scrollbar {
+    display: none;
+}

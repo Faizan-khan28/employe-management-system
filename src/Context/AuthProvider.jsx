@@ -9,12 +9,12 @@ export default function AuthProvider({ children }) {
 
   useEffect(() => {
     setLocalStorage();
-    let { Admin, Employees } = getLocalStoage();
-    setUserData({ Admin, Employees });
+    let {Employees} = getLocalStoage();
+    setUserData({Employees});
   }, []);
 
   return (
-    <AuthContext.Provider value={userData}>
+    <AuthContext.Provider value={[userData,setUserData,]}>
       <div>{children}</div>
     </AuthContext.Provider>
   );

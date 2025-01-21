@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Header() {
+export default function Header(props) {
   // const [userName, setUserName] = useState("")
   // if(!data) {
   //   setUserName('Admin')
@@ -10,7 +10,9 @@ export default function Header() {
 
   let logOUtUser = () => {
     localStorage.setItem("loggedInUser","")
-    window.location.reload()
+    // window.location.reload()
+    props.changeUser("")
+    
   }
 
   return (
