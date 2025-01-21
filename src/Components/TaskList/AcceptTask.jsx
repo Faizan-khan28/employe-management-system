@@ -1,6 +1,5 @@
 
 export default function AcceptTask({data}) {
-  console.log(data);
   
   return (
     <div className="h-full flex-shrink-0 w-[300px] p-5 bg-blue-500 cursor-pointer rounded-xl">
@@ -10,7 +9,7 @@ export default function AcceptTask({data}) {
       </div>
       <h2 className="font-medium text-2xl mt-5">{data.taskTitle}</h2>
       <p className="text-sm mt-2">
-        {data.taskDescription}
+        {data.tasksdescription}
       </p>
       <div className="flex justify-between mt-4">
         <button className="bg-green-500 py-1 px-2 text-sm rounded">Mark as Completed</button>

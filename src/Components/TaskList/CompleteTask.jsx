@@ -7,7 +7,7 @@ export default function CompleteTask({data}) {
       </div>
       <h2 className="font-medium text-2xl mt-5">{data.taskTitle}</h2>
       <p className="text-sm mt-2">
-      {data.taskDescription}
+      {data.tasksdescription}
       </p>
       <div className="mt-4">
         <button className="w-full bg-green-500 py-1 px-2 rounded text-sm">Complete</button>

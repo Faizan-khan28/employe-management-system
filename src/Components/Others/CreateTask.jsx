@@ -20,8 +20,7 @@ export default function CreateTask() {
 
     setNewTask({taskTitle,taskDate,assignTO,category,description,active:false,newTask:true,failed:false,completed:false})
 
-    const data = userData.Employees
-    console.log(data);
+    const data = userData
 
     data.forEach((employee)=> {
       if(assignTO == employee.firstName) {
@@ -29,6 +28,8 @@ export default function CreateTask() {
         employee.taskCount.newTask = employee.taskCount.newTask+1
       }
     })
+    setUserData(data)
+    console.log(data);
 
     setTaskTitle('')
     setTaskDate('')

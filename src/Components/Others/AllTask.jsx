@@ -18,7 +18,7 @@ export default function AllTask() {
       </div>
       <div id="emp" className="h-[80%] overflow-auto">
         {userData &&
-          userData.Employees.map(employee => {
+          userData.map(employee => {
             return (
               <div key={employee.id} className="bg-red-400 font-semibold mb-2 py-2 px-4 flex flex-col sm:flex-row justify-between items-start sm:items-center rounded">
                 <h2 className="text-xs w-1/5 text-white sm:text-lg">
