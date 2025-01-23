@@ -14,7 +14,7 @@ export default function Login({handleLogin}) {
   };
 
   return (
-    <div className="flex w-screen h-screen justify-center items-center bg-[#1c1c1c]">
+    <div className="flex w-screen h-screen justify-center items-center bg-gray-900">
       <div className="border-2 border-red-600 rounded-3xl p-10 sm:p-16 bg-transparent w-[90%] max-w-md">
         <form
           onSubmit={handleSubmit}

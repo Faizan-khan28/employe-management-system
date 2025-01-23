@@ -2,7 +2,7 @@ const employeesData = [
   {
     id: 1,
     firstName: "Harsh",
-    email: "employee1@example.com",
+    email: "employee1@gmail.com",
     password: "123",
     tasks: [
       {
@@ -46,7 +46,7 @@ const employeesData = [
   {
     id: 2,
     firstName: "Faizan",
-    email: "employee2@example.com",
+    email: "employee2@gmail.com",
     password: "123",
     tasks: [
       {
@@ -90,7 +90,7 @@ const employeesData = [
   {
     id: 3,
     firstName: "Alfaiz",
-    email: "employee3@example.com",
+    email: "employee3@gmail.com",
     password: "123",
     tasks: [
       {
@@ -134,7 +134,7 @@ const employeesData = [
   {
     id: 4,
     firstName: "Ishaan",
-    email: "employee4@example.com",
+    email: "employee4@gmail.com",
     password: "123",
     tasks: [
       {
@@ -178,7 +178,7 @@ const employeesData = [
   {
     id: 5,
     firstName: "Mira",
-    email: "employee5@example.com",
+    email: "employee5@gmail.com",
     password: "123",
     tasks: [
       {
