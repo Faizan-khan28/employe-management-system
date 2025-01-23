@@ -9,7 +9,7 @@ export default function Header(props) {
     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 bg-gray-800 rounded-md">
       <h1 className="text-lg sm:text-xl font-medium text-white">
         Hello 
-        <span className="text-xl pl-2 sm:text-2xl font-bold">{props.data.firstName}😊</span>
+        <span className="text-xl pl-2 sm:text-2xl font-bold">😊</span>
       </h1>
       <button
         onClick={logOUtUser}
