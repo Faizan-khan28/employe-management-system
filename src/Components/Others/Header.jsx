@@ -1,27 +1,20 @@
-import { useState } from "react";
 
 export default function Header(props) {
-  // const [userName, setUserName] = useState("")
-  // if(!data) {
-  //   setUserName('Admin')
-  // }else {
-  //   setUserName(data.firstName)
-  // }
-
   let logOUtUser = () => {
-    localStorage.setItem("loggedInUser","")
-    // window.location.reload()
-    props.changeUser("")
-    
-  }
+    localStorage.setItem("loggedInUser", "");
+    props.changeUser("");
+  };
 
   return (
-    <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between p-4">
-      <h1 className="text-xl sm:text-2xl font-medium">
+    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 bg-gray-800 rounded-md">
+      <h1 className="text-lg sm:text-xl font-medium text-white">
         Hello <br />
-        <span className="text-2xl sm:text-3xl font-semibold">userName 😊</span>
+        <span className="text-xl sm:text-2xl font-bold">userName 😊</span>
       </h1>
-      <button onClick={logOUtUser} className="mt-2 sm:mt-0 bg-red-600 px-4 sm:px-5 py-2 rounded-md text-base sm:text-lg font-medium">
+      <button
+        onClick={logOUtUser}
+        className="mt-2 sm:mt-0 bg-red-600 px-4 sm:px-5 py-2 rounded-md text-sm sm:text-base font-medium hover:bg-red-700"
+      >
         Log Out
       </button>
     </div>
